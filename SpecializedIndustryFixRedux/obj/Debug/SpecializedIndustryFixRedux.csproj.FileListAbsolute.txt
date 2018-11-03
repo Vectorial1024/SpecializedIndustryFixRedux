@@ -1,0 +1,15 @@
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\SpecializedIndustryFixRedux.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\SpecializedIndustryFixRedux.pdb
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\0Harmony.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\Assembly-CSharp.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\ICities.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\UnityEngine.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\ColossalManaged.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\PopsApiWrapper.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\obj\Debug\SpecializedIndustryFixRedux.csproj.CoreCompileInputs.cache
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\obj\Debug\SpecializedIndustryFixRedux.csproj.CopyComplete
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\obj\Debug\SpecializedIndustryFixRedux.dll
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\obj\Debug\SpecializedIndustryFixRedux.pdb
+D:\External Storage\source\repo\SpecializedIndustryFixRedux\SpecializedIndustryFixRedux\obj\Debug\SpecializedIndustryFixRedux.csprojAssemblyReference.cache
