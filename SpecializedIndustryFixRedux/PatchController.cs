@@ -18,6 +18,10 @@ namespace SpecializedIndustryFixRedux
             }
         }
 
+        /*
+         * The "singleton" design is pretty straight-forward.
+         */
+
         private static HarmonyInstance harmony;
 
         public static HarmonyInstance GetHarmonyInstance()
@@ -33,15 +37,8 @@ namespace SpecializedIndustryFixRedux
         public static void Activate()
         {
             GetHarmonyInstance().PatchAll(Assembly.GetExecutingAssembly());
-            
-            /*
-            using (StreamWriter outputFile = new StreamWriter("C:\\Users\\Vincent Wong\\Desktop\\output.txt", true))
-            {
-                outputFile.WriteLine("Pfft");
-            }
-            */
         }
-
+        
         public static void Deactivate()
         {
             GetHarmonyInstance().UnpatchAll(HarmonyModID);
