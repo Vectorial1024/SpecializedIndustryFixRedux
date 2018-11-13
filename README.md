@@ -12,4 +12,6 @@ This mod modifies IndustrialExtractorAI.SimulationStepActive via transpilation. 
 
 While it is always the best to fully understand the program code before doing any changes, I do not wish to delve too deep into the code. That would derail discussion of the problem from its solutions to its causes. Besides, this method is so deep in the Cities Skylines code that it would be practically impossible to just understand what that method does without also understanding how the game works, which wastes time, and attention.
 
+I will simply write down what works, and what works not.
+
 TODO: write up the real stuff
