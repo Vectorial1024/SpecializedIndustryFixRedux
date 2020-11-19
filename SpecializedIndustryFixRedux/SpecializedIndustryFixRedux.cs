@@ -37,6 +37,16 @@ namespace SpecializedIndustryFixRedux
              * This function can still be called when loading up the asset editor,
              * so we have to check where we are right now.
              */
+            try
+            {
+                // a simple check to see if Harmony v2 is installed.
+                Harmony h = new Harmony("bruh");
+                h = null;
+            }
+            catch (Exception)
+            {
+                throw new InvalidOperationException("Could not find Harmony v2; Specialized Industry Fix Redux now requires Harmony v2.");
+            }
             
             switch (mode)
             {
