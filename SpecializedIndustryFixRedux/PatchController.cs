@@ -1,4 +1,4 @@
-﻿using Harmony;
+﻿using HarmonyLib;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -22,13 +22,13 @@ namespace SpecializedIndustryFixRedux
          * The "singleton" design is pretty straight-forward.
          */
 
-        private static HarmonyInstance harmony;
+        private static Harmony harmony;
 
-        public static HarmonyInstance GetHarmonyInstance()
+        public static Harmony GetHarmonyInstance()
         {
             if (harmony == null)
             {
-                harmony = HarmonyInstance.Create(HarmonyModID);
+                harmony = new Harmony(HarmonyModID);
             }
 
             return harmony;
