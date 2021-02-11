@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using CitiesHarmony.API;
+using HarmonyLib;
 using ICities;
 using System;
 using System.Collections.Generic;
@@ -33,21 +34,8 @@ namespace SpecializedIndustryFixRedux
         /// <param name="mode">The loading mode.</param>
         public override void OnLevelLoaded(LoadMode mode)
         {
-            /*
-             * This function can still be called when loading up the asset editor,
-             * so we have to check where we are right now.
-             */
-            try
-            {
-                // a simple check to see if Harmony v2 is installed.
-                Harmony h = new Harmony("bruh");
-                h = null;
-            }
-            catch (Exception)
-            {
-                throw new InvalidOperationException("Could not find Harmony v2; Specialized Industry Fix Redux now requires Harmony v2.");
-            }
-            
+            // we no longer need to worry about harmony; we will let citiesharmony help out with harmony
+
             switch (mode)
             {
                 case LoadMode.LoadGame:
@@ -60,6 +48,7 @@ namespace SpecializedIndustryFixRedux
                     return;
             }
 
+            UnifyHarmonyVersions();
             PatchController.Activate();
         }
 
@@ -69,7 +58,20 @@ namespace SpecializedIndustryFixRedux
         /// </summary>
         public override void OnLevelUnloading()
         {
+            UnifyHarmonyVersions();
             PatchController.Deactivate();
+        }
+
+        private void UnifyHarmonyVersions()
+        {
+            if (HarmonyHelper.IsHarmonyInstalled)
+            {
+                // this code will redirect our Harmony 2.x version to the authoritative version stipulated by CitiesHarmony
+                // I will make it such that the game will throw hard error if Harmony is not found,
+                // as per my usual software deployment style
+                // the user will have to subscribe to Harmony by themselves. I am not their parent anyways.
+                // so this block will have to be empty.
+            }
         }
     }
 }
