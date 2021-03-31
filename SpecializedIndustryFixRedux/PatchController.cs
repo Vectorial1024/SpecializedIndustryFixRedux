@@ -8,7 +8,7 @@ using System.Text;
 
 namespace SpecializedIndustryFixRedux
 {
-    public class PatchController
+    internal class PatchController
     {
         public static string HarmonyModID
         {
