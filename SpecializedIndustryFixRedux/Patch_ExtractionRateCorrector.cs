@@ -44,11 +44,11 @@ namespace SpecializedIndustryFixRedux
                     {
                         occurenceLdloc++;
 
-                        if (occurenceLdloc == 15)
+                        if (occurenceLdloc == 16)
                         {
                             // Begin yielding our instructions here.
-                            yield return new CodeInstruction(OpCodes.Ldloca_S, 17);
-                            yield return new CodeInstruction(OpCodes.Ldloca_S, 5);
+                            yield return new CodeInstruction(OpCodes.Ldloca_S, 18);
+                            yield return new CodeInstruction(OpCodes.Ldloca_S, 6);
                             yield return new CodeInstruction(OpCodes.Call, typeof(Patch_ExtractionRateCorrector).GetMethod("ExtractionRateCorrection"));
 
                             patchComplete = true;
