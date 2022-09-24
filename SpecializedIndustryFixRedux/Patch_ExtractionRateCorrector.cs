@@ -88,6 +88,11 @@ namespace SpecializedIndustryFixRedux
 			}
 			num = num7 * 10;
 		}
+
+        According to information from the original mod page by Steam user steevm, it is said that the variable "num" can be zero, which will lead to the building being shut down.
+        Thus, by checking eg alive workers count and forcing "num" to become 1, those industrial buildings can continue functioning.
+        Original documentation here:
+        https://steamcommunity.com/sharedfiles/filedetails/?id=662386761
          */
 
         /// <summary>
