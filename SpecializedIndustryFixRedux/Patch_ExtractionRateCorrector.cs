@@ -31,6 +31,9 @@ namespace SpecializedIndustryFixRedux
              * Or, alternatively, the 15-th occurence of ldloc.s; this is more efficient due to
              * limitations to the Harmony library.
              * (Even more technical info: Harmony library cannot read the actual value of the operand, duh...)
+             * 
+             * Extra documentation: this is supposed to correct the extraction rate before this value is further used in other subsequent calculations
+             * We must patch this right after the Mathf.Max as described below
              */
             foreach (CodeInstruction instruction in instructions)
             {
